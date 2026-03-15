@@ -1,0 +1,15 @@
+{
+  "id": "formatColorPicker",
+  "name": "Format Color Picker",
+  "description": "Choose color format before picking",
+  "version": "1.0.0",
+  "author": "Incognitux",
+  "icon": "colorize",
+  "type": "widget",
+  "capabilities": [
+    "control-center",
+    "dankbar-widget"
+  ],
+  "component": "./pickerWidget.qml",
+  "permissions": ["settings_read", "settings_write"]
+}
