@@ -1,6 +1,6 @@
 # DMS Format Color Plugin
 
-A [DMS (Dux Modular Shell)](https://github.com/nicknisi/dank-material-shell) plugin for choosing color format before picking, directly from the Control Center.
+A [DMS (Dux Modular Shell)](https://github.com/duxlabs-dev/dux-shell) plugin for choosing color format before picking, directly from the Control Center.
 
 ## Features
 
