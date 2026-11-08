@@ -69,7 +69,7 @@ PluginComponent {
         id: innerRect
         anchors.left: parent ? parent.left : undefined
         anchors.right: parent ? parent.right : undefined
-        implicitHeight: Theme.itemHeight * 2 + Theme.spacingS
+        implicitHeight: (Theme.fontSizeXLarge * 2 + Theme.spacingM) * 2 + Theme.spacingS
         radius: Theme.cornerRadius
         color: Theme.withAlpha(Theme.surfaceContainerHigh, Theme.popupTransparency)
         border.color: Qt.rgba(Theme.outline.r, Theme.outline.g, Theme.outline.b, 0.08)
