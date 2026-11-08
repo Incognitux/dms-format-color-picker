@@ -9,8 +9,8 @@ import qs.Modules.Plugins
 PluginComponent {
     id: root
 
+    property real borderWidth: 2
     readonly property string myPluginId: "formatColorPicker"
-    property bool isEnabled: typeof pluginData !== "undefined" && pluginData.isEnabled ? pluginData.isEnabled : false
     property string mode: {
       if (typeof PluginService !== "undefined" && PluginService) {
         return PluginService.loadPluginData(root.myPluginId, "mode", "HEX") || "HEX"
@@ -69,7 +69,7 @@ PluginComponent {
         id: innerRect
         anchors.left: parent ? parent.left : undefined
         anchors.right: parent ? parent.right : undefined
-        implicitHeight: 100
+        implicitHeight: Theme.itemHeight * 2 + Theme.spacingS
         radius: Theme.cornerRadius
         color: Theme.withAlpha(Theme.surfaceContainerHigh, Theme.popupTransparency)
         border.color: Qt.rgba(Theme.outline.r, Theme.outline.g, Theme.outline.b, 0.08)
@@ -88,7 +88,7 @@ PluginComponent {
               Layout.preferredHeight: innerRect.height / 3
               radius: Theme.cornerRadius
               color: root.mode === modelData ? Theme.primary : 'transparent'
-              border.width: 2
+              border.width: borderWidth
               border.color: Theme.primary
 
               StyledText {
