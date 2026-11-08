@@ -3,7 +3,7 @@ import QtQuick.Layouts
 import Quickshell
 import qs.Common
 import qs.Services
-import qs.Widgets
+import qs.DCommon.Widgets
 import qs.Modules.Plugins
 
 PluginComponent {
@@ -124,7 +124,7 @@ PluginComponent {
             cursorShape: Qt.PointingHandCursor
             onClicked: root.pickColor()
 
-            DankIcon {
+            DIcon {
                 id: icon
                 name: "colorize"
                 size: Theme.barIconSize(root.barThickness, -2)
@@ -141,7 +141,7 @@ PluginComponent {
             cursorShape: Qt.PointingHandCursor
             onClicked: root.pickColor()
 
-            DankIcon {
+            DIcon {
                 id: icon
                 name: "colorize"
                 size: Theme.barIconSize(root.barThickness, -2)
